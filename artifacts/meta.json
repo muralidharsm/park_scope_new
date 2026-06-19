@@ -1,0 +1,50 @@
+{
+  "total_violations": 298445,
+  "n_zones": 7814,
+  "n_named_junctions": 168,
+  "n_police_stations": 54,
+  "date_min": "2023-11-10",
+  "date_max": "2024-04-08",
+  "pareto_top1pct_cells": 33.1,
+  "pareto_top5pct_cells": 63.5,
+  "pareto_top10pct_cells": 77.2,
+  "pareto_top5pct_junctions": 44.8,
+  "top_junctions": {
+    "BTP051 - Safina Plaza Junction": 15449,
+    "BTP082 - KR Market Junction": 11538,
+    "BTP040 - Elite Junction": 10718,
+    "BTP044 - Sagar Theatre Junction": 10549,
+    "BTP211 - Central Street Junction": 5388,
+    "BTP058 - Subbanna Junction": 5189,
+    "BTP027 - Modi Bridge Junction": 4584,
+    "BTP020 - Hosahalli Metro Station": 4101
+  },
+  "peak_hours": [
+    10,
+    11,
+    9
+  ],
+  "model_metrics": {
+    "trained": true,
+    "n_train_rows": 57411,
+    "n_test_rows": 13746,
+    "model_mae": 2.724,
+    "naive_mae": 3.028,
+    "model_rmse": 5.572,
+    "naive_rmse": 5.777,
+    "feature_importance": {
+      "Day of week": 0.0262,
+      "Day of month": 0.0223,
+      "Month / seasonality": 0.0301,
+      "Weekend vs weekday": 0.001,
+      "Location (zone baseline rate)": 0.9204
+    }
+  },
+  "impact_weights": {
+    "violation_density": 0.45,
+    "event_congestion": 0.25,
+    "junction_criticality": 0.2,
+    "strategic_proximity": 0.1
+  },
+  "timezone_assumption": "created_datetime treated as UTC, converted to IST (+5:30)"
+}
